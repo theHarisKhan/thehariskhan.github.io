@@ -16,6 +16,14 @@ body{
 .navbar{
     border-bottom: 1px solid #5F2AFE;
 }
+.nav-link{
+    color: #fff !important;
+}
+.nav-link:hover{
+    font-weight: 600;
+    letter-spacing: 3px;
+    transition: ease-out 150ms;
+}
 .logo{
     height: 50px;
 }
@@ -123,14 +131,23 @@ hr{
     height: 250px;
 }
 /*
-    Portfolio Section
+    Projects Section
 */
 .gallery{
     margin: 100px auto 200px;
 }
+.gallery .main-title h4{
+    font-size: 28px;
+    color: white;
+}
+.gallery .main-title p{
+    color: #d3d0d0;
+}
+.work-box{
+    margin-top: 120px;
+}
 .box{
     width: 70%;
-    height: 30%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -139,6 +156,7 @@ hr{
     padding: 2em 0;
     border: 1px solid #4b4a4a;
     color: #6d6d6d;
+    text-align: center;
 }
 .box .links{
     display: flex;
@@ -153,6 +171,18 @@ hr{
 }
 .box .links a:hover{
     color: #5F2AFE;
+}
+.git-btn a{
+    text-decoration: none;
+    background-color: blue;
+    padding: 7px 12px;
+    color: white;
+    border-radius: 8px;
+}
+.git-btn a:hover{
+    background-color: #00b7ff;
+    color: black;
+    transition: ease-in-out 450ms;
 }
 /*
     Client Review 
@@ -227,7 +257,7 @@ footer span{
         width: 90%;
     }
     .box{
-        height: 40%;
+        height: 70%;
     }
     .client-says p{
         width: 80%;
@@ -247,7 +277,6 @@ footer span{
         width: 80%;
     }
     .box{
-        height: 40%;
         width: 90%;
     }
     .box h4{
